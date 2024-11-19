@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Interactivo de Cerveza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Científico visible durante todo el manual -->
+  <div id="scientifico-container" style="position: fixed; right: 20px; top: 100px;">
+    <img src="scientifico.png" alt="Científico acompañante" style="max-width: 200px; border-radius: 10px;">
+  </div>
+  <div class="header">Manual Interactivo para el Proceso de Cerveza</div>
+  <div class="container" id="container">
+    <!-- Secciones del manual -->
+    <div class="section">
+      <div class="contenido">
+        <h1>¡Bienvenido al Manual Interactivo!</h1>
+        <p>Conoce el proceso de elaboración de cerveza paso a paso.</p>
+        <button onclick="irSeccion(1)">Comenzar</button>
+      </div>
+    </div>
+    <div class="section">
+      <div class="contenido">
+        <h2>NOMS relacionadas</h2>
+        <ul>
+          <li><strong>NOM-142-SSA1/SCFI-2014:</strong> Bebidas alcohólicas – Especificaciones sanitarias.</li>
+          <li><strong>NOM-251-SSA1-2009:</strong> Prácticas de higiene para procesos de alimentos.</li>
+        </ul>
+        <button onclick="irSeccion(2)">Siguiente</button>
+      </div>
+    </div>
+    <div class="section">
+      <div class="contenido">
+        <h2>Maceración</h2>
+        <p>La maceración es el proceso donde se mezclan los granos malteados con agua caliente para extraer azúcares fermentables.</p>
+        <button onclick="irSeccion(3)">Siguiente</button>
+      </div>
+    </div>
+    <div class="section">
+      <div class="contenido">
+        <h2>Cocción</h2>
+        <p>Durante la cocción, el mosto se hierve y se esteriliza, además de añadirse los lúpulos que aportan el amargor característico.</p>
+        <button onclick="irSeccion(4)">Siguiente</button>
+      </div>
+    </div>
+    <div class="section">
+      <div class="contenido">
+        <h2>Fermentación</h2>
+        <p>La fermentación transforma los azúcares en alcohol y dióxido de carbono mediante la acción de levaduras.</p>
+        <button onclick="irSeccion(5)">Siguiente</button>
+      </div>
+    </div>
+    <div class="section">
+      <div class="contenido">
+        <h2>Quiz Final</h2>
+        <div id="quiz-container"></div>
+        <div id="quiz-resultado"></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="contenido">
+        <h2>¡Felicidades!</h2>
+        <p>Completaste el manual. ¿Listo para intentarlo en la práctica?</p>
+        <button onclick="irSeccion(0)">Volver al inicio</button>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
